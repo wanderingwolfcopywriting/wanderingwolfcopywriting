@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing & Optimization — Wandering Wolf Copywriting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-deep: #1a1f2e; --bg-card: #252b3d; --bg-card-hover: #2d3448; --accent: #d4a04a; --text-primary: #f5f2eb; --text-secondary: #9ba1b0; --text-muted: #6b7280; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--bg-deep); color: var(--text-primary); min-height: 100vh; line-height: 1.6; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.03; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); }
+        .container { max-width: 480px; margin: 0 auto; padding: 48px 24px 64px; position: relative; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; margin-bottom: 32px; transition: color 0.2s ease; }
+        .back-link:hover { color: var(--accent); }
+        .back-link svg { width: 16px; height: 16px; }
+        .header { margin-bottom: 32px; animation: fadeInDown 0.6s ease-out; }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .service-icon { width: 56px; height: 56px; background: rgba(212, 160, 74, 0.15); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+        .service-icon svg { width: 28px; height: 28px; color: var(--accent); }
+        .page-title { font-family: 'Fraunces', serif; font-size: 1.75rem; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 12px; color: var(--text-primary); }
+        .page-desc { font-size: 1rem; color: var(--text-secondary); line-height: 1.7; }
+        .scope-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; padding: 24px; margin-bottom: 24px; animation: fadeInUp 0.5s ease-out 0.1s both; }
+        .scope-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 16px; }
+        .scope-list { list-style: none; }
+        .scope-list li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.95rem; color: var(--text-secondary); display: flex; align-items: flex-start; gap: 12px; }
+        .scope-list li:last-child { border-bottom: none; }
+        .scope-list li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+        .scope-note { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; color: var(--text-muted); font-style: italic; }
+        .form-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; padding: 28px 24px; animation: fadeInUp 0.5s ease-out 0.2s both; }
+        .form-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 20px; }
+        .form-group { margin-bottom: 20px; }
+        .form-label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .form-input, .form-textarea { width: 100%; padding: 14px 16px; background: var(--bg-deep); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; color: var(--text-primary); font-family: 'DM Sans', sans-serif; font-size: 0.95rem; transition: all 0.2s ease; }
+        .form-input:focus, .form-textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(212, 160, 74, 0.15); }
+        .form-input::placeholder, .form-textarea::placeholder { color: var(--text-muted); }
+        .form-textarea { min-height: 120px; resize: vertical; }
+        .submit-btn { width: 100%; padding: 16px 24px; background: linear-gradient(135deg, var(--accent) 0%, #c4923a 100%); border: none; border-radius: 10px; color: var(--bg-deep); font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; }
+        .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(212, 160, 74, 0.3); }
+        .alt-contact { text-align: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; color: var(--text-secondary); }
+        .alt-contact a { color: var(--accent); text-decoration: none; font-weight: 500; }
+        .alt-contact a:hover { text-decoration: underline; }
+        @media (max-width: 480px) { .container { padding: 36px 20px 48px; } .page-title { font-size: 1.5rem; } .scope-card, .form-card { padding: 20px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            Back
+        </a>
+
+        <header class="header">
+            <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h1 class="page-title">Email Marketing & Optimization</h1>
+            <p class="page-desc">Your emails should be your hardest-working sales tool — not an afterthought. I write sequences that convert and optimize campaigns so every send moves the needle.</p>
+        </header>
+
+        <div class="scope-card">
+            <h2 class="scope-title">What This Can Include</h2>
+            <ul class="scope-list">
+                <li>Welcome sequences that turn new subscribers into engaged readers</li>
+                <li>Sales sequences and launch emails that drive conversions</li>
+                <li>Nurture campaigns to keep your audience warm between launches</li>
+                <li>Reactivation sequences to win back cold subscribers</li>
+                <li>CTR optimization — subject lines, CTAs, layout tweaks based on real data</li>
+                <li>Weekly or bi-weekly analytics with clear action notes (what worked, what to change)</li>
+                <li>A/B testing strategy and implementation</li>
+            </ul>
+            <p class="scope-note">Scope is tailored to your needs during our discovery call. You might need a full email overhaul, or just someone to optimize what you've already got.</p>
+        </div>
+
+        <div class="form-card">
+            <h2 class="form-title">Tell me about your email situation</h2>
+            <form action="https://formsubmit.co/wanderingwolfcopywriting@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Inquiry: Email Marketing & Optimization">
+                <input type="hidden" name="_next" value="https://YOUR-VERCEL-URL.vercel.app/success.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                
+                <div class="form-group">
+                    <label class="form-label" for="email">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="message">What's going on with your emails?</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Are you starting from scratch? Have emails but they're not converting? Need someone to take over? Give me the lay of the land..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Inquiry →</button>
+            </form>
+
+            <div class="alt-contact">
+                Prefer to talk it through? <a href="https://calendly.com/wanderingwolfcopywriting/new-meeting" target="_blank" rel="noopener">Book a free call</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
