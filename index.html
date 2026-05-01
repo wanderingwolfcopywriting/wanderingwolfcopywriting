@@ -600,6 +600,52 @@
       letter-spacing: 0.03em;
     }
 
+    /* ── MOTTO STRIP ── */
+    .motto-strip {
+      background: var(--ink);
+      padding: 4rem 3rem;
+      text-align: center;
+      border-top: 1px solid var(--forest);
+    }
+
+    .motto-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .motto-rule {
+      display: block;
+      width: 60px;
+      height: 1px;
+      background: var(--bronze);
+      opacity: 0.6;
+    }
+
+    .motto-text {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .motto-text em {
+      font-style: italic;
+      color: var(--bronze-light);
+    }
+
+    .motto-sub {
+      font-size: 1rem;
+      color: rgba(246, 242, 234, 0.5);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
     /* ── CTA STRIP ── */
     .cta-strip {
       background: var(--forest);
@@ -757,6 +803,8 @@
       .featured-content { border-right: none; border-bottom: 1px solid var(--border); padding: 3rem 1.5rem; }
       .featured-panel { padding: 3rem 1.5rem; }
       .who { grid-template-columns: 1fr; gap: 1.5rem; padding: 3rem 1.5rem; }
+      .motto-strip { padding: 3rem 1.5rem; }
+      .motto-rule { width: 30px; }
       .cta-strip { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 1.5rem; }
       .services-header { padding: 2rem 1.5rem 1.5rem; }
       .positioning { padding: 3.5rem 1.5rem; }
@@ -803,16 +851,16 @@
     <div class="hero-right">
       <div class="hero-stat-stack">
         <div class="hero-stat">
-          <div class="stat-number">90</div>
-          <div class="stat-label">Day CTR pilot — actively running</div>
+          <div class="stat-number">439%</div>
+          <div class="stat-label">CTR improvement on best performing email in 90-day pilot</div>
         </div>
         <div class="hero-stat">
-          <div class="stat-number">5+</div>
-          <div class="stat-label">Services across content, email & LinkedIn</div>
+          <div class="stat-number">43%+</div>
+          <div class="stat-label">Average open rates achieved — nearly double industry standard</div>
         </div>
         <div class="hero-stat">
           <div class="stat-number">$0</div>
-          <div class="stat-label">To see if we're a fit — free consult</div>
+          <div class="stat-label">To see if we're a fit — free 30-min consult, no pitch</div>
         </div>
       </div>
       <p class="hero-tagline">"Stop leaking leads. Start seeing what's actually working."</p>
@@ -916,7 +964,7 @@
     </div>
     <div class="featured-panel">
       <blockquote>
-        "Some platforms are a vortex. Built to steal the one thing you can never get back — your time, your focus, your mental real estate. LinkedIn is different. This is the grown-ups' table."
+        "Some platforms are a vortex. Built to steal the things you can never get back — your time, your focus, your mental real estate. LinkedIn is different. This is the grown-ups' table."
       </blockquote>
       <ul class="process-steps">
         <li class="process-step">
@@ -957,6 +1005,16 @@
     </div>
   </section>
 
+  <!-- MOTTO -->
+  <section class="motto-strip">
+    <div class="motto-inner fade-in">
+      <span class="motto-rule"></span>
+      <p class="motto-text">I don't just write. I <em>diagnose.</em></p>
+      <span class="motto-rule"></span>
+    </div>
+    <p class="motto-sub fade-in">There's a difference between a copywriter and a strategist — and knowing which problem you actually have changes everything.</p>
+  </section>
+
   <!-- CTA -->
   <section id="contact" class="cta-strip">
     <div class="fade-in">
@@ -964,11 +1022,11 @@
       <p>Free 30-minute consult. No pitch, no pressure — just an honest look at what's not working and whether I'm the right person to fix it.</p>
     </div>
     <div class="fade-in">
-      <form class="cta-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <form class="cta-form" action="https://formspree.io/f/xlgzezze" method="POST">
         <input type="email" name="email" placeholder="Your email address" required />
         <textarea name="message" placeholder="What are you building — and where are you stuck?"></textarea>
         <button type="submit">Send Inquiry →</button>
-        <p class="cta-or">Or <a href="https://calendly.com/wanderingwolfcopywriting/new-meeting" target="_blank">book a free call directly</a></p>
+        <p class="cta-or">Or <a href="https://calendly.com/wanderingwolfcopywriting" target="_blank">book a free call directly</a></p>
       </form>
     </div>
   </section>
@@ -979,7 +1037,7 @@
     <ul class="footer-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#profile-to-pipeline">Profile to Pipeline</a></li>
-      <li><a href="https://calendly.com/wanderingwolfcopywriting/new-meeting" target="_blank">Book a Call</a></li>
+      <li><a href="https://calendly.com/wanderingwolfcopywriting" target="_blank">Book a Call</a></li>
     </ul>
     <span class="footer-copy">© 2026 Wandering Wolf Copywriting</span>
   </footer>
