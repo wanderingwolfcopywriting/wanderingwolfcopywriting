@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MM9N9EDE6W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MM9N9EDE6W');
-</script>
+<head>
+  <!-- Google tag kept from the previous site -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MM9N9EDE6W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MM9N9EDE6W');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wandering Wolf Copywriting — Content Strategy & Ghostwriting for Coaches</title>
-  <meta name="description" content="Strategic copywriting, LinkedIn ghostwriting, and email marketing for coaches, founders, and brands who are done guessing." />
+  <title>Wandering Wolf | Marketing for Michigan Law Firms, Resorts and Inns, and Local Businesses</title>
+  <meta name="description" content="Flat-fee email, social media, and content for Michigan law firms, resorts and inns, and local businesses. Your voice. You approve every word." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -23,1048 +22,303 @@
       --cream-dark: #EDE8DC;
       --ink: #1A1916;
       --ink-mid: #4A4840;
-      --ink-light: #8A8680;
-      --bronze: #9B7B52;
+      --ink-light: #6F6B64;
+      --bronze: #8A6C45;
       --bronze-light: #C4A882;
       --forest: #2C3B2D;
       --border: #D8D2C4;
       --serif: 'Playfair Display', Georgia, serif;
       --sans: 'DM Sans', system-ui, sans-serif;
     }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--sans);
-      background: var(--cream);
-      color: var(--ink);
-      font-size: 16px;
-      line-height: 1.7;
-      font-weight: 300;
-      overflow-x: hidden;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.25rem 3rem;
-      background: rgba(246, 242, 234, 0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.3s;
-    }
-
-    nav.scrolled { border-bottom-color: var(--border); }
-
-    .nav-logo {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      color: var(--ink);
-      text-decoration: none;
-      letter-spacing: 0.01em;
-    }
-
-    .nav-logo span { color: var(--bronze); font-style: italic; }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 2.5rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 0.82rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--ink-mid);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover { color: var(--bronze); }
-
-    .nav-cta {
-      background: var(--ink) !important;
-      color: var(--cream) !important;
-      padding: 0.5rem 1.25rem;
-      border-radius: 2px;
-      letter-spacing: 0.04em !important;
-      transition: background 0.2s !important;
-    }
-
-    .nav-cta:hover { background: var(--forest) !important; color: var(--cream) !important; }
-
-    /* ── HERO ── */
-    .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding-top: 80px;
-    }
-
-    .hero-left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 5rem 3rem 5rem 3rem;
-      border-right: 1px solid var(--border);
-    }
-
-    .hero-eyebrow {
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--bronze);
-      margin-bottom: 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 32px;
-      height: 1px;
-      background: var(--bronze);
-    }
-
-    h1 {
-      font-family: var(--serif);
-      font-size: clamp(2.6rem, 4.5vw, 3.8rem);
-      font-weight: 400;
-      line-height: 1.15;
-      color: var(--ink);
-      margin-bottom: 1.5rem;
-      letter-spacing: -0.01em;
-    }
-
-    h1 em {
-      font-style: italic;
-      color: var(--bronze);
-    }
-
-    .hero-body {
-      font-size: 1.05rem;
-      color: var(--ink-mid);
-      max-width: 480px;
-      margin-bottom: 2.5rem;
-      line-height: 1.8;
-    }
-
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary {
-      background: var(--ink);
-      color: var(--cream);
-      text-decoration: none;
-      padding: 0.85rem 2rem;
-      font-size: 0.82rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      border-radius: 2px;
-      transition: background 0.2s, transform 0.15s;
-      display: inline-block;
-    }
-
-    .btn-primary:hover { background: var(--forest); transform: translateY(-1px); }
-
-    .btn-ghost {
-      color: var(--ink-mid);
-      text-decoration: none;
-      font-size: 0.85rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 2px;
-      transition: color 0.2s, border-color 0.2s;
-    }
-
-    .btn-ghost:hover { color: var(--bronze); border-color: var(--bronze); }
-
-    .hero-right {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 5rem 3rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-stat-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    .hero-stat {
-      border-top: 1px solid var(--border);
-      padding-top: 1.25rem;
-      animation: fadeUp 0.6s ease both;
-    }
-
-    .hero-stat:nth-child(2) { animation-delay: 0.1s; }
-    .hero-stat:nth-child(3) { animation-delay: 0.2s; }
-
-    .stat-number {
-      font-family: var(--serif);
-      font-size: 2.8rem;
-      font-weight: 400;
-      color: var(--ink);
-      line-height: 1;
-      margin-bottom: 0.3rem;
-    }
-
-    .stat-label {
-      font-size: 0.82rem;
-      color: var(--ink-light);
-      letter-spacing: 0.04em;
-    }
-
-    .hero-tagline {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      font-style: italic;
-      color: var(--ink-mid);
-      line-height: 1.7;
-    }
-
-    /* ── MARQUEE ── */
-    .marquee-bar {
-      background: var(--forest);
-      color: var(--cream);
-      padding: 0.85rem 0;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    .marquee-track {
-      display: inline-flex;
-      gap: 3rem;
-      animation: marquee 28s linear infinite;
-    }
-
-    .marquee-item {
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      opacity: 0.85;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .marquee-item::after {
-      content: '✦';
-      font-size: 0.6rem;
-      opacity: 0.5;
-    }
-
-    /* ── POSITIONING STRIP ── */
-    .positioning {
-      padding: 5rem 3rem;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .positioning h2 {
-      font-family: var(--serif);
-      font-size: clamp(1.6rem, 3vw, 2.4rem);
-      font-weight: 400;
-      line-height: 1.4;
-      color: var(--ink);
-      margin-bottom: 1.5rem;
-    }
-
-    .positioning h2 em { font-style: italic; color: var(--bronze); }
-
-    .positioning p {
-      font-size: 1rem;
-      color: var(--ink-mid);
-      max-width: 620px;
-      margin: 0 auto;
-      line-height: 1.8;
-    }
-
-    /* ── SERVICES ── */
-    .services {
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .services-header {
-      padding: 3rem 3rem 0;
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1.5rem;
-    }
-
-    .section-label {
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--bronze);
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .service-card {
-      padding: 2.5rem 2.5rem;
-      border-right: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      transition: background 0.2s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .service-card:last-child { border-right: none; }
-    .service-card:nth-child(3) { border-right: none; }
-    .service-card:hover { background: var(--cream-dark); }
-
-    .service-card::after {
-      content: '→';
-      position: absolute;
-      bottom: 2rem;
-      right: 2rem;
-      font-size: 1.2rem;
-      color: var(--bronze);
-      opacity: 0;
-      transform: translateX(-6px);
-      transition: opacity 0.2s, transform 0.2s;
-    }
-
-    .service-card:hover::after { opacity: 1; transform: translateX(0); }
-
-    .service-num {
-      font-family: var(--serif);
-      font-size: 0.75rem;
-      color: var(--ink-light);
-      margin-bottom: 1.5rem;
-      font-style: italic;
-    }
-
-    .service-card h3 {
-      font-family: var(--serif);
-      font-size: 1.25rem;
-      font-weight: 400;
-      color: var(--ink);
-      margin-bottom: 0.75rem;
-      line-height: 1.3;
-    }
-
-    .service-card p {
-      font-size: 0.88rem;
-      color: var(--ink-mid);
-      line-height: 1.7;
-      margin-bottom: 1.5rem;
-    }
-
-    .service-price {
-      font-size: 0.78rem;
-      color: var(--bronze);
-      letter-spacing: 0.04em;
-    }
-
-    /* ── FEATURED: PROFILE TO PIPELINE ── */
-    .featured {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border-top: 1px solid var(--border);
-    }
-
-    .featured-content {
-      padding: 5rem 3rem;
-      border-right: 1px solid var(--border);
-    }
-
-    .featured-tag {
-      display: inline-block;
-      background: var(--bronze);
-      color: var(--cream);
-      font-size: 0.68rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.85rem;
-      border-radius: 2px;
-      margin-bottom: 1.5rem;
-    }
-
-    .featured-content h2 {
-      font-family: var(--serif);
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      font-weight: 400;
-      line-height: 1.2;
-      color: var(--ink);
-      margin-bottom: 1rem;
-    }
-
-    .featured-content h2 em { font-style: italic; color: var(--bronze); }
-
-    .featured-body {
-      font-size: 0.95rem;
-      color: var(--ink-mid);
-      line-height: 1.8;
-      margin-bottom: 2rem;
-      max-width: 460px;
-    }
-
-    .featured-price {
-      display: flex;
-      align-items: baseline;
-      gap: 12px;
-      margin-bottom: 2rem;
-    }
-
-    .featured-price .amount {
-      font-family: var(--serif);
-      font-size: 2.4rem;
-      color: var(--ink);
-    }
-
-    .featured-price .original {
-      font-size: 1.2rem;
-      color: var(--ink-light);
-      text-decoration: line-through;
-    }
-
-    .featured-price .spots {
-      font-size: 0.78rem;
-      color: var(--bronze);
-      letter-spacing: 0.04em;
-    }
-
-    .deliverables-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      overflow: hidden;
-      margin-bottom: 2rem;
-    }
-
-    .del-item {
-      padding: 1rem 1.1rem;
-      border-right: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      font-size: 0.83rem;
-      color: var(--ink-mid);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .del-item:nth-child(even) { border-right: none; }
-    .del-item:nth-last-child(-n+2) { border-bottom: none; }
-
-    .del-item::before {
-      content: '✓';
-      color: var(--bronze);
-      font-size: 0.75rem;
-      flex-shrink: 0;
-    }
-
-    .featured-panel {
-      padding: 5rem 3rem;
-      background: var(--ink);
-      color: var(--cream);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .featured-panel blockquote {
-      font-family: var(--serif);
-      font-size: clamp(1.1rem, 2vw, 1.45rem);
-      font-style: italic;
-      line-height: 1.7;
-      color: var(--cream);
-      opacity: 0.9;
-      margin-bottom: 2.5rem;
-      position: relative;
-      padding-left: 1.5rem;
-    }
-
-    .featured-panel blockquote::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: var(--bronze);
-      opacity: 0.7;
-    }
-
-    .process-steps { list-style: none; }
-
-    .process-step {
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-      padding: 1rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .process-step:last-child { border-bottom: none; }
-
-    .step-num {
-      font-family: var(--serif);
-      font-size: 0.75rem;
-      font-style: italic;
-      color: var(--bronze-light);
-      flex-shrink: 0;
-      margin-top: 2px;
-      width: 20px;
-    }
-
-    .step-text {
-      font-size: 0.88rem;
-      color: rgba(246, 242, 234, 0.75);
-      line-height: 1.6;
-    }
-
-    .step-text strong {
-      color: var(--cream);
-      font-weight: 500;
-      display: block;
-      font-size: 0.9rem;
-      margin-bottom: 2px;
-    }
-
-    /* ── WHO I WORK WITH ── */
-    .who {
-      padding: 5rem 3rem;
-      border-top: 1px solid var(--border);
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 4rem;
-      align-items: start;
-    }
-
-    .who-label {
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--bronze);
-      padding-top: 0.3rem;
-    }
-
-    .who-content h2 {
-      font-family: var(--serif);
-      font-size: clamp(1.5rem, 2.5vw, 2rem);
-      font-weight: 400;
-      line-height: 1.4;
-      color: var(--ink);
-      margin-bottom: 1.5rem;
-    }
-
-    .who-content h2 em { font-style: italic; color: var(--bronze); }
-
-    .who-content p {
-      font-size: 0.95rem;
-      color: var(--ink-mid);
-      line-height: 1.8;
-      margin-bottom: 1rem;
-      max-width: 580px;
-    }
-
-    .who-traits {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 1.5rem;
-    }
-
-    .trait {
-      background: var(--cream-dark);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      padding: 0.4rem 0.9rem;
-      font-size: 0.8rem;
-      color: var(--ink-mid);
-      letter-spacing: 0.03em;
-    }
-
-    /* ── MOTTO STRIP ── */
-    .motto-strip {
-      background: var(--ink);
-      padding: 4rem 3rem;
-      text-align: center;
-      border-top: 1px solid var(--forest);
-    }
-
-    .motto-inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .motto-rule {
-      display: block;
-      width: 60px;
-      height: 1px;
-      background: var(--bronze);
-      opacity: 0.6;
-    }
-
-    .motto-text {
-      font-family: var(--serif);
-      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-      font-weight: 400;
-      color: var(--cream);
-      line-height: 1.2;
-      letter-spacing: -0.01em;
-    }
-
-    .motto-text em {
-      font-style: italic;
-      color: var(--bronze-light);
-    }
-
-    .motto-sub {
-      font-size: 1rem;
-      color: rgba(246, 242, 234, 0.5);
-      max-width: 520px;
-      margin: 0 auto;
-      line-height: 1.7;
-    }
-
-    /* ── CTA STRIP ── */
-    .cta-strip {
-      background: var(--forest);
-      padding: 5rem 3rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .cta-strip h2 {
-      font-family: var(--serif);
-      font-size: clamp(1.6rem, 3vw, 2.4rem);
-      font-weight: 400;
-      line-height: 1.3;
-      color: var(--cream);
-    }
-
-    .cta-strip h2 em { font-style: italic; color: var(--bronze-light); }
-
-    .cta-strip p {
-      color: rgba(246, 242, 234, 0.65);
-      font-size: 0.95rem;
-      margin-top: 0.75rem;
-      line-height: 1.7;
-    }
-
-    .cta-form { display: flex; flex-direction: column; gap: 1rem; }
-
-    .cta-form input,
-    .cta-form textarea {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 2px;
-      padding: 0.85rem 1rem;
-      color: var(--cream);
-      font-family: var(--sans);
-      font-size: 0.9rem;
-      font-weight: 300;
-      outline: none;
-      transition: border-color 0.2s;
-      width: 100%;
-    }
-
-    .cta-form input::placeholder,
-    .cta-form textarea::placeholder { color: rgba(246,242,234,0.35); }
-
-    .cta-form input:focus,
-    .cta-form textarea:focus { border-color: rgba(255,255,255,0.4); }
-
-    .cta-form textarea { min-height: 100px; resize: vertical; }
-
-    .cta-form button {
-      background: var(--bronze);
-      color: var(--cream);
-      border: none;
-      border-radius: 2px;
-      padding: 0.9rem 2rem;
-      font-family: var(--sans);
-      font-size: 0.82rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: background 0.2s;
-      align-self: flex-start;
-    }
-
-    .cta-form button:hover { background: #7a6040; }
-
-    .cta-or {
-      font-size: 0.82rem;
-      color: rgba(246,242,234,0.45);
-    }
-
-    .cta-or a {
-      color: var(--bronze-light);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(196, 168, 130, 0.3);
-    }
-
-    .cta-or a:hover { border-color: var(--bronze-light); }
-
-    /* ── FOOTER ── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 2.5rem 3rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .footer-logo {
-      font-family: var(--serif);
-      font-size: 0.95rem;
-      color: var(--ink);
-    }
-
-    .footer-logo span { color: var(--bronze); font-style: italic; }
-
-    .footer-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .footer-links a {
-      font-size: 0.78rem;
-      color: var(--ink-light);
-      text-decoration: none;
-      letter-spacing: 0.04em;
-      transition: color 0.2s;
-    }
-
-    .footer-links a:hover { color: var(--bronze); }
-
-    .footer-copy {
-      font-size: 0.75rem;
-      color: var(--ink-light);
-    }
-
-    /* ── ANIMATIONS ── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes marquee {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      nav { padding: 1rem 1.5rem; }
-      .nav-links { gap: 1.5rem; }
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-left { padding: 5rem 1.5rem 3rem; border-right: none; border-bottom: 1px solid var(--border); }
-      .hero-right { padding: 3rem 1.5rem 4rem; }
-      .hero-stat-stack { flex-direction: row; gap: 1.5rem; }
-      .hero-stat { border-top: none; border-left: 1px solid var(--border); padding-left: 1.5rem; padding-top: 0; }
-      .stat-number { font-size: 2rem; }
-      .hero-tagline { margin-top: 2rem; }
-      .services-grid { grid-template-columns: 1fr; }
-      .service-card { border-right: none; }
-      .service-card:nth-child(3) { border-right: none; }
-      .featured { grid-template-columns: 1fr; }
-      .featured-content { border-right: none; border-bottom: 1px solid var(--border); padding: 3rem 1.5rem; }
-      .featured-panel { padding: 3rem 1.5rem; }
-      .who { grid-template-columns: 1fr; gap: 1.5rem; padding: 3rem 1.5rem; }
-      .motto-strip { padding: 3rem 1.5rem; }
-      .motto-rule { width: 30px; }
-      .cta-strip { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 1.5rem; }
-      .services-header { padding: 2rem 1.5rem 1.5rem; }
-      .positioning { padding: 3.5rem 1.5rem; }
-      footer { flex-direction: column; gap: 1.25rem; text-align: center; padding: 2rem 1.5rem; }
-      .footer-links { flex-wrap: wrap; justify-content: center; }
-    }
-
-    @media (max-width: 600px) {
-      .nav-links { display: none; }
-      .deliverables-list { grid-template-columns: 1fr; }
-      .del-item { border-right: none; }
-      .del-item:nth-child(even) { border-right: none; }
-      .del-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
-      .del-item:last-child { border-bottom: none; }
-      h1 { font-size: 2.2rem; }
-      .featured-content h2 { font-size: 1.7rem; }
+    body { background: var(--cream); color: var(--ink); font-family: var(--sans); font-size: 18px; line-height: 1.6; }
+    a { color: inherit; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+    nav { position: sticky; top: 0; z-index: 10; background: var(--cream); border-bottom: 1px solid var(--border); }
+    nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
+    .logo { font-family: var(--serif); font-size: 22px; text-decoration: none; white-space: nowrap; }
+    .logo span { color: var(--bronze); font-style: italic; }
+    .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; font-size: 15px; }
+    .nav-links a { text-decoration: none; color: var(--ink-mid); }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-links .nav-cta { background: var(--forest); color: var(--cream); padding: 8px 16px; border-radius: 4px; white-space: nowrap; }
+    .nav-links .nav-cta:hover { color: var(--cream); }
+
+    .hero { padding: 88px 0 72px; }
+    .eyebrow { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--bronze); font-weight: 500; margin-bottom: 16px; }
+    h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(38px, 6.4vw, 64px); line-height: 1.12; max-width: 15em; margin-bottom: 24px; }
+    h1 em { color: var(--bronze); }
+    .lead { font-size: 21px; color: var(--ink-mid); max-width: 36em; margin-bottom: 32px; }
+    .btn { display: inline-block; background: var(--forest); color: var(--cream); padding: 14px 26px; border-radius: 4px; text-decoration: none; font-weight: 500; font-size: 17px; border: 0; cursor: pointer; font-family: var(--sans); }
+    .btn:hover { background: #1F2B20; }
+    .text-link { margin-left: 20px; color: var(--ink-mid); }
+
+    section { padding: 72px 0; }
+    .tint { background: var(--cream-dark); }
+    h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 4.4vw, 42px); line-height: 1.2; margin-bottom: 16px; }
+    .section-intro { color: var(--ink-mid); max-width: 36em; margin-bottom: 40px; }
+
+    .offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .offer h3 { font-family: var(--serif); font-weight: 600; font-size: 24px; line-height: 1.25; margin-bottom: 12px; padding-top: 16px; border-top: 2px solid var(--bronze); }
+    .offer > p { color: var(--ink-mid); margin-bottom: 20px; font-size: 17px; }
+    .price-list { list-style: none; font-size: 16px; }
+    .price-list li { padding: 12px 0; border-top: 1px solid var(--border); }
+    .price-list strong { display: block; font-weight: 500; }
+    .price-list span { color: var(--ink-mid); }
+    .sub { font-family: var(--serif); font-weight: 600; font-size: 24px; margin-top: 48px; margin-bottom: 16px; }
+    .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+    .tags li { border: 1px solid var(--bronze-light); border-radius: 4px; padding: 6px 14px; font-size: 16px; }
+    .note { font-size: 15px; color: var(--ink-light); margin-top: 24px; max-width: 44em; }
+
+    .ai-copy { max-width: 40em; }
+    .ai-copy p { margin-bottom: 16px; color: var(--ink-mid); }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; list-style: none; counter-reset: step; }
+    .steps li { counter-increment: step; font-size: 17px; color: var(--ink-mid); }
+    .steps li::before { content: counter(step); display: block; font-family: var(--serif); font-size: 34px; color: var(--bronze); line-height: 1.2; margin-bottom: 8px; }
+    .steps strong { display: block; color: var(--ink); font-weight: 500; margin-bottom: 4px; }
+
+    .proof { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 20px; }
+    .proof b { display: block; font-family: var(--serif); font-weight: 400; font-size: 52px; line-height: 1.1; color: var(--forest); }
+    .proof p { font-size: 16px; color: var(--ink-mid); }
+
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+    .checks { list-style: none; }
+    .checks li { padding: 12px 0; border-top: 1px solid var(--border); font-size: 17px; color: var(--ink-mid); }
+
+    .cta { background: var(--forest); color: var(--cream); }
+    .cta .two { align-items: start; }
+    .cta p { color: #D9D5C9; }
+    .cta a { color: var(--cream); }
+    form label { display: block; font-size: 15px; margin-bottom: 6px; color: #D9D5C9; }
+    form input, form textarea { width: 100%; padding: 12px 14px; font: inherit; font-size: 17px; border: 1px solid var(--bronze-light); border-radius: 4px; background: var(--cream); color: var(--ink); margin-bottom: 16px; }
+    form textarea { min-height: 120px; resize: vertical; }
+    .cta .btn { background: var(--bronze-light); color: var(--ink); }
+    .cta .btn:hover { background: #D3BB9A; }
+    .form-note { font-size: 14px; margin-top: 12px; }
+
+    footer { padding: 32px 0; font-size: 15px; color: var(--ink-mid); }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+    :focus-visible { outline: 2px solid var(--bronze); outline-offset: 2px; }
+
+    @media (max-width: 820px) {
+      body { font-size: 17px; }
+      .offers, .proof, .two { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .two { gap: 32px; }
+      .hero { padding: 56px 0 48px; }
+      section { padding: 56px 0; }
+      .wrap { padding: 0 16px; }
+      .nav-links li:not(:last-child) { display: none; }
+      .lead { font-size: 19px; }
+      .text-link { display: block; margin: 16px 0 0; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav id="nav">
-    <a href="#" class="nav-logo">Wandering <span>Wolf</span> Copywriting</a>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#profile-to-pipeline">LinkedIn</a></li>
-      <li><a href="#who">About</a></li>
-      <li><a href="#contact" class="nav-cta">Work With Me</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-left">
-      <p class="hero-eyebrow">Ghostwriter · Copywriter · Content & Marketing Strategist</p>
-      <h1>Words that <em>work</em> while you're building</h1>
-      <p class="hero-body">Coaches come to me when they're doing all the things — posting, emailing, launching — but nothing's connecting. I don't just write content — I find out why it isn't converting, fix the root cause, and then write audience-specific copy that compels action.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Book a Free Consult</a>
-        <a href="#services" class="btn-ghost">See what I do</a>
-      </div>
-    </div>
-    <div class="hero-right">
-      <div class="hero-stat-stack">
-        <div class="hero-stat">
-          <div class="stat-number">53%</div>
-          <div class="stat-label">Peak open rate for a coaching client — achieved in under 12 weeks. Industry average: 21%</div>
-        </div>
-        <div class="hero-stat">
-          <div class="stat-number">5×</div>
-          <div class="stat-label">CTR improvement on the best performing email — same client, same list, better strategy</div>
-        </div>
-        <div class="hero-stat">
-          <div class="stat-number">40%+</div>
-          <div class="stat-label">Average open rates sustained across the engagement — nearly double the industry benchmark</div>
-        </div>
-      </div>
-      <p class="hero-tagline">"Stop leaking leads. Start seeing what's actually working."</p>
-    </div>
-  </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee-bar" aria-hidden="true">
-    <div class="marquee-track">
-      <span class="marquee-item">Email Marketing</span>
-      <span class="marquee-item">LinkedIn Ghostwriting</span>
-      <span class="marquee-item">Content Strategy</span>
-      <span class="marquee-item">CTR Optimization</span>
-      <span class="marquee-item">Profile to Pipeline</span>
-      <span class="marquee-item">YouTube Strategy</span>
-      <span class="marquee-item">Funnel Audits</span>
-      <span class="marquee-item">Launch Copy</span>
-      <span class="marquee-item">Email Marketing</span>
-      <span class="marquee-item">LinkedIn Ghostwriting</span>
-      <span class="marquee-item">Content Strategy</span>
-      <span class="marquee-item">CTR Optimization</span>
-      <span class="marquee-item">Profile to Pipeline</span>
-      <span class="marquee-item">YouTube Strategy</span>
-      <span class="marquee-item">Funnel Audits</span>
-      <span class="marquee-item">Launch Copy</span>
-    </div>
-  </div>
-
-  <!-- POSITIONING -->
-  <section class="positioning fade-in">
-    <h2>You're not stuck because you're not working hard enough. You're stuck because your content <em>isn't pulling in the same direction.</em></h2>
-    <p>I specialize in building systems — not just writing words. Every email, every social post, every piece of copy should be working together toward one goal. That's what I build.</p>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="services">
-    <div class="services-header">
-      <span class="section-label">Services</span>
-      <span style="font-size:0.82rem; color: var(--ink-light);">All work is done by me — no outsourcing</span>
-    </div>
-    <div class="services-grid">
-      <a href="#contact" class="service-card fade-in">
-        <div class="service-num">01</div>
-        <h3>Email Marketing & Optimization</h3>
-        <p>Sequences, campaigns, CTR optimization and analytics with action notes. Your email list is your most valuable asset — let's make it work.</p>
-        <span class="service-price">Custom scope</span>
-      </a>
-      <a href="#contact" class="service-card fade-in">
-        <div class="service-num">02</div>
-        <h3>LinkedIn Ghostwriting</h3>
-        <p>8–10 posts per month written in your voice. LinkedIn is where the serious buyers are — consistent, strategic content that builds authority and fills your pipeline.</p>
-        <span class="service-price">From $1,200/month</span>
-      </a>
-      <a href="#contact" class="service-card fade-in">
-        <div class="service-num">03</div>
-        <h3>Platform & Funnel Audits</h3>
-        <p>Something's not working but you're not sure what. I find where you're leaking leads and give you a clear fix-it roadmap.</p>
-        <span class="service-price">Starting at $100</span>
-      </a>
-      <a href="#contact" class="service-card fade-in">
-        <div class="service-num">04</div>
-        <h3>YouTube & Content Strategy</h3>
-        <p>SEO, keywords, and content that builds authority and turns views into clients. Views are vanity if they don't lead anywhere.</p>
-        <span class="service-price">Custom scope</span>
-      </a>
-      <a href="#contact" class="service-card fade-in">
-        <div class="service-num">05</div>
-        <h3>Content & Copywriting</h3>
-        <p>Audience psychology baked in — words that sound like you, but sharper. VSL scripts, sales pages, launch copy, and more.</p>
-        <span class="service-price">Custom scope</span>
-      </a>
-      <a href="#contact" class="service-card fade-in">
-        <div class="service-num">06</div>
-        <h3>Launch & Funnel Support</h3>
-        <p>Full ecosystem builds where every platform works together. For coaches ready to stop piecing things together and start scaling.</p>
-        <span class="service-price">Custom scope</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- FEATURED: PROFILE TO PIPELINE -->
-  <section id="profile-to-pipeline" class="featured">
-    <div class="featured-content fade-in">
-      <span class="featured-tag">Featured Offer</span>
-      <h2>Profile to <em>Pipeline</em></h2>
-      <p class="featured-body">LinkedIn is where the grown-ups go. They're not there to kill time — they're there with intent, with budgets, and with decisions to make. Your profile is either working for you in that room, or it's not.</p>
-      <div class="featured-price">
-        <span class="amount">$350</span>
-        <span class="original">$500</span>
-        <span class="spots">· 5 intro spots only</span>
-      </div>
-      <div class="deliverables-list">
-        <div class="del-item">Voice capture call</div>
-        <div class="del-item">Headline writing</div>
-        <div class="del-item">About section</div>
-        <div class="del-item">Experience reframe</div>
-        <div class="del-item">Featured section strategy</div>
-        <div class="del-item">Banner direction</div>
-      </div>
-      <a href="#contact" class="btn-primary">DM me "pipeline" to start</a>
-    </div>
-    <div class="featured-panel">
-      <blockquote>
-        "Some platforms are a vortex. Built to steal the things you can never get back — your time, your focus, your mental real estate. LinkedIn is different. This is the grown-ups' table."
-      </blockquote>
-      <ul class="process-steps">
-        <li class="process-step">
-          <span class="step-num">i.</span>
-          <div class="step-text"><strong>Voice capture call</strong>30 minutes. You talk, I listen, I capture everything.</div>
-        </li>
-        <li class="process-step">
-          <span class="step-num">ii.</span>
-          <div class="step-text"><strong>Full profile build</strong>Headline, about, experience reframe — all in your voice.</div>
-        </li>
-        <li class="process-step">
-          <span class="step-num">iii.</span>
-          <div class="step-text"><strong>Delivered in 5 days</strong>One revision round included. Then you go live.</div>
-        </li>
-        <li class="process-step">
-          <span class="step-num">iv.</span>
-          <div class="step-text"><strong>Optional: monthly ghostwriting</strong>Your profile is the foundation. Content keeps it working — from $1,200/mo.</div>
-        </li>
+  <nav aria-label="Main">
+    <div class="wrap">
+      <a href="#top" class="logo">Wandering <span>Wolf</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how">How this works</a></li>
+        <li><a href="#ai">About AI</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Book a free call</a></li>
       </ul>
     </div>
-  </section>
+  </nav>
 
-  <!-- WHO I WORK WITH -->
-  <section id="who" class="who">
-    <div class="who-label fade-in">Who this is for</div>
-    <div class="who-content fade-in">
-      <h2>Built for coaches and founders who are <em>serious</em> about growth</h2>
-      <p>I work with coaches, course creators, and founders who have a real offer and a real audience — but whose content isn't pulling its weight. You've got the expertise. I build the systems that translate it into clients.</p>
-      <p>If you're looking for someone to churn out generic content — I'm not your person. If you want a strategist who digs into what's actually not working and fixes it — let's talk.</p>
-      <div class="who-traits">
-        <span class="trait">Coaches &amp; course creators</span>
-        <span class="trait">Founders with a story to tell</span>
-        <span class="trait">Brands building authority</span>
-        <span class="trait">People who know their worth</span>
-        <span class="trait">Serious about LinkedIn</span>
-        <span class="trait">Done guessing what's broken</span>
+  <main id="top">
+    <header class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Marketing for Michigan businesses</p>
+        <h1>Michigan runs on businesses like yours. <em>Let's make sure people know your name.</em></h1>
+        <p class="lead">I'm Nia. I help Michigan businesses get seen by more people through email, social media, and writing that actually sounds like you. Flat prices, quoted up front. No surprises. And nothing goes out until you say so.</p>
+        <a href="#contact" class="btn">Let's talk. The first call's free.</a>
+        <a href="#services" class="text-link">See what I do</a>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- MOTTO -->
-  <section class="motto-strip">
-    <div class="motto-inner fade-in">
-      <span class="motto-rule"></span>
-      <p class="motto-text">I don't just write. I <em>diagnose.</em></p>
-      <span class="motto-rule"></span>
-    </div>
-    <p class="motto-sub fade-in">There's a difference between a copywriter and a strategist — and knowing which problem you actually have changes everything.</p>
-  </section>
+    <section id="services" class="tint">
+      <div class="wrap">
+        <h2>Who I work with</h2>
+        <p class="section-intro">You're good at what you do. You just don't have time to also be your own marketing department. That's where I come in.</p>
+        <div class="offers">
+          <article class="offer">
+            <h3>Law firms</h3>
+            <p>Help new clients feel less lost, stay in touch with the people you've helped, and give your team clear guides to work from. Your attorney gets the final say on all of it.</p>
+            <ul class="price-list">
+              <li><strong>Client Welcome Series</strong><span>6 emails plus setup. $650</span></li>
+              <li><strong>Monthly Letter</strong><span>2 client emails a month. $295/mo</span></li>
+              <li><strong>Law Update Letter</strong><span>Monthly, $325/mo. Weekly, $725/mo</span></li>
+              <li><strong>SOPs and client guides</strong><span>Office processes and client how-to guides. Not legal documents or legal advice. Your attorney approves them. Flat quote.</span></li>
+            </ul>
+          </article>
+          <article class="offer">
+            <h3>Resorts and inns</h3>
+            <p>Get your place in front of more people, and give past guests a reason to come back. I get your social media and email going. Bookings, pricing, and listings stay with you. Michigan first. Other states, just ask.</p>
+            <ul class="price-list">
+              <li><strong>Guest List Launch</strong><span>A signup plus a short welcome series. $497</span></li>
+              <li><strong>Guest Letter</strong><span>Ongoing notes to your list. $249/mo</span></li>
+              <li><strong>Social media setup and content</strong><span>Flat quote</span></li>
+            </ul>
+          </article>
+          <article class="offer">
+            <h3>Local businesses</h3>
+            <p>New in town, or been here forever with just a Facebook page? Either way, let's get you set up so people can find you and get in touch.</p>
+            <ul class="price-list">
+              <li><strong>Getting you set up online</strong><span>Flat quote</span></li>
+              <li><strong>Website copy and design overhaul</strong><span>Flat quote</span></li>
+              <li><strong>Ongoing marketing</strong><span>Flat quote</span></li>
+            </ul>
+          </article>
+        </div>
+        <p class="note">Don't want to mess with sending it yourself? I can do that too, for an added fee. I send from your account, only after you've approved each email.</p>
 
-  <!-- CTA -->
-  <section id="contact" class="cta-strip">
-    <div class="fade-in">
-      <h2>Tell me where you're stuck. I'll tell you what's <em>leaking.</em></h2>
-      <p>Free 30-minute consult. No pitch, no pressure — just an honest look at what's not working and whether I'm the right person to fix it.</p>
-    </div>
-    <div class="fade-in">
-      <form class="cta-form" action="https://formspree.io/f/xlgzezze" method="POST">
-        <input type="email" name="email" placeholder="Your email address" required />
-        <textarea name="message" placeholder="What are you building — and where are you stuck?"></textarea>
-        <button type="submit">Send Inquiry →</button>
-        <p class="cta-or">Or <a href="https://calendly.com/wanderingwolfcopywriting" target="_blank">book a free call directly</a></p>
-      </form>
-    </div>
-  </section>
+        <h3 class="sub">What I can do for you</h3>
+        <ul class="tags">
+          <li>Email marketing</li>
+          <li>Newsletters</li>
+          <li>Lead magnets</li>
+          <li>YouTube</li>
+          <li>TikTok</li>
+          <li>Instagram</li>
+          <li>Website copy and design</li>
+          <li>SOPs and guides</li>
+          <li>Social media audits</li>
+          <li>Profile overhauls</li>
+          <li>Landing pages</li>
+        </ul>
+        <p class="note">I also post and network on LinkedIn for clients who want it. Just ask.</p>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
+    <section id="audits">
+      <div class="wrap">
+        <h2>Not sure what's holding you back?</h2>
+        <p class="section-intro">I'll go through your page, figure out where it's stuck, and hand you a one-time sheet of ideas you can actually use. Do them yourself, or hire me to do them for you.</p>
+        <div class="offers">
+          <article class="offer">
+            <h3>Audits</h3>
+            <p>Pick one platform or all three. You get my honest review and a suggestion sheet to keep.</p>
+            <ul class="price-list">
+              <li><strong>TikTok audit</strong><span>$149</span></li>
+              <li><strong>Instagram audit</strong><span>$149</span></li>
+              <li><strong>YouTube audit</strong><span>$179</span></li>
+              <li><strong>All three</strong><span>$397</span></li>
+            </ul>
+          </article>
+          <article class="offer">
+            <h3>Overhauls</h3>
+            <p>When the thing people land on isn't doing its job.</p>
+            <ul class="price-list">
+              <li><strong>Social media profile overhaul</strong><span>$295 per platform</span></li>
+              <li><strong>Landing page</strong><span>One page, built or redone. $650</span></li>
+              <li><strong>Linktree or link-in-bio overhaul</strong><span>$95, or $50 added to other work</span></li>
+            </ul>
+          </article>
+          <article class="offer">
+            <h3>Do it for me</h3>
+            <p>Got your audit and don't have time to do the work? I can take it from there. If a platform won't let me be added, I'll give you step-by-step changes to make yourself.</p>
+            <ul class="price-list">
+              <li><strong>Putting the audit to work</strong><span>Starting at $395 per platform. You get a flat quote after your audit. Book within 30 days of getting your audit, and what you paid for that platform's audit comes off.</span></li>
+            </ul>
+          </article>
+        </div>
+        <p class="note">An audit is my honest review and my best suggestions. That goes for everything on this page. I can't promise growth, and I'd be careful of anyone who does.</p>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <h2>How this works</h2>
+        <p class="section-intro">No big contract to start. Just a free call to see if we're a good fit, then a short, plain agreement.</p>
+        <ol class="steps">
+          <li><strong>We talk</strong>A free 30-minute call. If I'm not the right fit, I'll tell you.</li>
+          <li><strong>You tell me about your business</strong>How you talk, what you do, and what you'd never want said.</li>
+          <li><strong>I write, you read</strong>Nothing goes out until you've read it and said yes.</li>
+          <li><strong>It stays yours</strong>Your list and your accounts stay yours. I ask to be added as a user, never for your password.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="ai" class="tint">
+      <div class="wrap">
+        <h2>Let's talk about AI, because I know you're wondering.</h2>
+        <div class="ai-copy">
+          <p>Yes, I use it. I'd rather tell you up front than have you wonder.</p>
+          <p>I know a lot of folks around here are leery of it, and I get it. Nobody wants their business sounding like a robot wrote it. I don't want that either.</p>
+          <p>Here's what it really does. AI is a tool, and I lean on it a lot. It does much of the research and first drafting, and it helps me look at your numbers to see what's working so I can adjust. Honestly, it gets my own wheels turning. It helps my creativity. It doesn't replace it. And it doesn't know you or your customers. That part comes from you, and from me.</p>
+          <p>I read everything and fix what needs fixing before you ever see it, and you approve it before it goes anywhere. I do look at your numbers when we're making changes, but I don't sit and monitor your analytics day to day.</p>
+          <p>And when you have a question, you get me. Not a chatbot. People around here do business with people, and that's not changing on my watch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>One client's results</h2>
+        <p class="section-intro">Email is the work I have numbers for. This is from one coaching client.</p>
+        <div class="proof">
+          <div><b>53%</b><p>Peak open rate, within 12 weeks</p></div>
+          <div><b>5&times;</b><p>Click-through improvement on the best-performing email</p></div>
+          <div><b>40%+</b><p>Average open rate sustained</p></div>
+        </div>
+        <p class="note">That's one client, not a promise for your business. What I can promise is how I work: clear subject lines, one point per email, one link.</p>
+      </div>
+    </section>
+
+    <section id="about" class="tint">
+      <div class="wrap two">
+        <div>
+          <h2>Hi, I'm Nia.</h2>
+          <p>I live and work in Michigan, and I want to see the businesses here do well. When Michigan businesses grow, Michigan wins.</p>
+          <br />
+          <p>I'll always tell you the truth, even when it's not what you want to hear. If something isn't worth your money, you'll hear it from me first.</p>
+        </div>
+        <div>
+          <h2>What you can count on</h2>
+          <ul class="checks">
+            <li>You see everything before it goes out.</li>
+            <li>I'll always be upfront about how the work gets done.</li>
+            <li>Only people who already have a relationship with you. No buying lists.</li>
+            <li>For law firms: your attorney has the final say, and no confidential case details go in any email. I don't put client names or case details into AI tools. If you share anything sensitive, I'll tell you in writing how it's handled.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <div class="wrap two">
+        <div>
+          <h2>So what's going on with your business?</h2>
+          <p>Tell me a little about it. The first call's free, 30 minutes, no pressure. Worst case, you get an honest opinion.</p>
+          <br />
+          <p><a href="https://calendly.com/wanderingwolfcopywriting" target="_blank" rel="noopener">Grab a time on my calendar</a> or email me at <a href="mailto:wanderingwolfcopywriting@gmail.com">wanderingwolfcopywriting@gmail.com</a></p>
+        </div>
+        <form action="https://formspree.io/f/xlgzezze" method="POST">
+          <label for="email">Your email</label>
+          <input id="email" type="email" name="email" autocomplete="email" required />
+          <label for="message">What's your business, and what do you need help with?</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit" class="btn">Send it to Nia</button>
+          <p class="form-note">I use what you send to reply to you, and I don't sell or share it. The form runs through Formspree. Law firms: please don't send client or case details here.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <div class="footer-logo">Wandering <span>Wolf</span> Copywriting</div>
-    <ul class="footer-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#profile-to-pipeline">Profile to Pipeline</a></li>
-      <li><a href="https://calendly.com/wanderingwolfcopywriting" target="_blank">Book a Call</a></li>
-    </ul>
-    <span class="footer-copy">© 2026 Wandering Wolf Copywriting</span>
+    <div class="wrap">
+      <span>&copy; 2026 Wandering Wolf. Michigan.</span>
+      <span>This site uses Google Analytics to count visits.</span>
+      <span>Wandering Wolf is not a law firm and does not give legal advice.</span>
+    </div>
   </footer>
-
-  <script>
-    // Nav scroll state
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 40);
-    });
-
-    // Scroll fade-in
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
 
 </body>
 </html>
