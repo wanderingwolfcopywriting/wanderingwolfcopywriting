@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/copywriting.html", "destination": "/", "permanent": false },
+    { "source": "/email-marketing.html", "destination": "/", "permanent": false },
+    { "source": "/launch-support.html", "destination": "/", "permanent": false },
+    { "source": "/platform-audit.html", "destination": "/", "permanent": false },
+    { "source": "/success.html", "destination": "/", "permanent": false },
+    { "source": "/youtube-linkedin.html", "destination": "/", "permanent": false }
+  ]
+}
